@@ -10,10 +10,24 @@
 *{box-sizing:border-box}
 .body-fallback,body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:var(--text); background:linear-gradient(180deg,var(--bg-100),#fff);}
 .container{max-width:1000px;margin:0 auto;padding:0 20px}
+
+/* Welcome Page Styles */
+.welcome-container{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;background:linear-gradient(135deg,var(--bg-100) 0%,#f0f4fb 100%)}
+.welcome-content{text-align:center;max-width:600px}
+.welcome-header{margin-bottom:24px}
+.welcome-title{font-size:2.5rem;font-weight:300;color:var(--muted);margin:0 0 8px;letter-spacing:1px}
+.welcome-subtitle{font-size:3.5rem;font-weight:700;color:var(--accent);margin:0 0 32px;background:linear-gradient(90deg,var(--accent),var(--accent-600));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.welcome-text{font-size:1.1rem;color:var(--text);line-height:1.6;margin-bottom:32px;opacity:0.85}
+.welcome-button{display:inline-block;padding:14px 40px;background:linear-gradient(90deg,var(--accent),var(--accent-600));color:white;text-decoration:none;border-radius:8px;font-weight:600;transition:all 0.3s ease;box-shadow:0 10px 30px rgba(11,110,246,0.2)}
+.welcome-button:hover{transform:translateY(-2px);box-shadow:0 15px 40px rgba(11,110,246,0.3)}
+
+/* Site Header & Navigation */
 .site-header{background:transparent;padding:18px 0}
 .header-inner{display:flex;align-items:center;justify-content:space-between}
 .logo{font-weight:700;color:var(--accent);font-size:1.2rem}
 .nav a{margin-left:18px;color:var(--muted);text-decoration:none}
+
+/* CV Layout */
 .cv-main{padding:36px 0}
 .cv-layout{display:grid;grid-template-columns:300px 1fr;gap:28px;align-items:start}
 .sidebar{background:linear-gradient(180deg,var(--bg-200),#fff);padding:20px;border-radius:14px}
@@ -38,4 +52,6 @@
   .cv-layout{grid-template-columns:1fr;}
   .sidebar{order:2}
   .content{order:1}
+  .welcome-title{font-size:1.8rem}
+  .welcome-subtitle{font-size:2.5rem}
 }
